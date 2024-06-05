@@ -1,19 +1,20 @@
-<!DOCTYPE html>\n\
-<html>\n\
-<head>\n\
-  <title>Check Decoder_Ring</title>\n\
-  <script>\n\
-    var decoderRing = "'${Decoder_Ring}'";\n\
-    window.onload = function() {\n\
-      if (!decoderRing || decoderRing === "undefined") {\n\
-        document.getElementById("output").innerText = "Error";\n\
-      } else {\n\
-        document.getElementById("output").innerText = decoderRing;\n\
-      }\n\
-    };\n\
-  </script>\n\
-</head>\n\
-<body>\n\
-  <h1 id="output"></h1>\n\
-</body>\n\
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Decoder_Ring</title>
+  <script>
+    var decoderRing = "${Decoder_Ring}";
+    window.onload = function() {
+      if (!decoderRing || decoderRing === "undefined") {
+        document.getElementById("output").innerText = "Error";
+      } else {
+        document.getElementById("output").innerText = decoderRing;
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1 id="output"></h1>
+</body>
 </html>
