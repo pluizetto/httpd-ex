@@ -1,12 +1,12 @@
-html
 <!DOCTYPE html>
 <html>
 <head>
   <title>Check Decoder_Ring</title>
   <script>
+    // Aqui, supomos que o servidor irá substituir ${Decoder_Ring} pelo valor real ou uma string vazia
     var decoderRing = "${Decoder_Ring}";
     window.onload = function() {
-      if (!decoderRing || decoderRing === "undefined") {
+      if (!decoderRing || decoderRing === "${Decoder_Ring}") {
         document.getElementById("output").innerText = "Error";
       } else {
         document.getElementById("output").innerText = decoderRing;
